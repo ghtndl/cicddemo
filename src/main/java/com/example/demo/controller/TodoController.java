@@ -16,7 +16,7 @@ public class TodoController {
 
     @GetMapping({ "/test" })
     public ResponseEntity<String> hello() {
-        return ResponseEntity.ok("선욱이 치치");
+        return ResponseEntity.ok("세아야 안녕 캬캬");
     }
 
     @GetMapping({ "", "/" })
