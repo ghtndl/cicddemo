@@ -14,11 +14,6 @@ import java.util.List;
 public class TodoController {
     final TodoService service;
 
-    @GetMapping({ "/test" })
-    public ResponseEntity<String> hello() {
-        return ResponseEntity.ok("세아야 안녕 캬캬");
-    }
-
     @GetMapping({ "", "/" })
     public ResponseEntity<List<TodoDto>> getList() {
         return ResponseEntity.ok(service.getList());
